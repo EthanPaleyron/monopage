@@ -1,4 +1,4 @@
-# Name Project
+# Monopage
 
 ## Use of [Vite](https://vitejs.dev/) and [SCSS](https://sass-lang.com/).
 
@@ -17,13 +17,13 @@
 ![clone the project](README-resources/cloneTheProject.png)
 
 ```bash
-git clone (URL)
+git clone https://github.com/EthanPaleyron/monopage.git
 ```
 
 ### Enter the project.
 
 ```bash
-cd (name of the project)
+cd monopage
 ```
 
 ### Install the dependencies.

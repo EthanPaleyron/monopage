@@ -2,9 +2,111 @@
 @import "base";
 @import "styles";
 
-h1 {
-  @extend %absolute-center;
-  background: gradient(red, blue, 90deg);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: $main-bg-color;
+  color: $main-text-color;
+
+  header {
+    background-color: darken($main-text-color, 20%);
+    color: white;
+    padding: 10px 20px;
+
+    nav {
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          display: inline;
+          margin-right: 10px;
+
+          a {
+            color: $link-color;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Styles pour le footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Styles pour les articles */
+.article {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+/* Styles pour le formulaire */
+.article-form {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  button {
+    padding: 8px 16px;
+    margin-top: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
 }
